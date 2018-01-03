@@ -1,0 +1,14 @@
+<meta charset="utf-8">
+<script>
+
+	var summ = parseInt(prompt("сумма вашего вклада, рублей"))
+	var proc = parseInt(prompt("Процент в год, %"))/100
+	var n = parseInt(prompt("Срок вклада, лет"))
+	var sr
+	for (sr = 1; sr <= n; sr++) {
+		summ = summ + (summ*proc)
+		alert("В "+ sr + " год " + summ.toFixed(2));
+
+
+	}
+</script>
